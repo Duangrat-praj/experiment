@@ -1,0 +1,37 @@
+{{ block title }}
+    Tutorial
+{{ endblock }}
+{{ block content }}
+
+    <p>
+        This part is intended to familiarize you with the procedures of the experiment.<br>
+<!--        During this part, you <b>cannot</b> earn any money.-->
+    </p>
+    <p>
+    <ul>
+        <li>You will be presented with a series of 5 images that contain different patterns.<br>
+        Each pattern is associated with different score as shown below.
+    </p>
+    <p>
+        <img src="{{ static 'pattern_score.png' }}" width="500px"/></li>
+
+    </p>
+    <p>
+        Your job is to mentally calculate and report the total scores from the series of images you are shown.
+        The total payoff can be either positive or negative.
+    </p>
+    <p>
+        <li>After that you will be asked whether you want to see how many pictures of
+        <img src="{{ static 'pattern_lowest_score.png' }}" width="50px"/>
+        you just saw.</li>
+    </p>
+    <p>
+        <li>If you <b>do not want to see</b>, you can click NO button and the game ends. Your final answer will be the same as your first answer.</li>
+    </p>
+    <p>
+        <li>If you <b>want to see</b>, you can click YES button and ANSWER the total score again. Then, the game ends. The new answer will be your final answer.</li>
+    </p>
+    </ul>
+    {{ next_button }}
+
+{{ endblock }}

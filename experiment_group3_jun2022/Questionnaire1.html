@@ -1,0 +1,40 @@
+{{ block title }}
+    Questionnaire Part 1
+{{ endblock }}
+{{ block content }}
+
+    <p>
+        A number of statements which people have used to describe themselves are given below.
+        Read each statement and then select the appropriate number to indicate how you feel right now, that is, at this moment.
+        There is no right or wrong answers.
+        Do not spend too much time on any one statement but give the answer which seems to describe your present feelings best.
+    </p>
+
+<table class="table table-striped">
+    <tr>
+        <th></th>
+        <th>Not at all</th>
+        <th>Somewhat</th>
+        <th>Moderately so</th>
+        <th>Very much so</th>
+    </tr>
+    {{ for field in form }}
+    <tr>
+        <th>{{ field.label }}</th>
+        {{ for option in field }}
+        <td>{{ option }}</td>
+        {{ endfor }}
+    </tr>
+    {{ endfor }}
+</table>
+
+{{ next_button }}
+
+<script>
+    // workaround needed until wtforms #615 is published
+    for (let option of document.querySelectorAll('input[type=radio]')) {
+        option.required = 'required';
+    }
+</script>
+
+{{ endblock }}

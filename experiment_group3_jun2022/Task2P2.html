@@ -1,0 +1,19 @@
+{{ block title }}
+    Task 2
+{{ endblock }}
+{{ block content }}
+
+<p>
+    <video src="{{ static 'unlucky.mov' }}" width="320" height="240" autoplay>
+    </video>
+</p>
+ <p>
+     <img src="{{ static 'pattern_score.png' }}" width="500px"/><br>
+ </p>
+    <p>
+    {{ formfields }}
+    </p>
+
+    {{ next_button }}
+
+{{ endblock }}

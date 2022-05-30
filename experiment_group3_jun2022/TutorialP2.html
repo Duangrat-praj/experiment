@@ -1,0 +1,18 @@
+{{ block title }}
+    Tutorial
+{{ endblock }}
+{{ block content }}
+    <p>
+    <img src="{{ static 'pattern_score.png' }}" width="500px"/>
+    </p>
+    <p>
+    <video src="{{ static 'tutorial.mov' }}" width="300" height="300" autoplay>
+    </video>
+    </p>
+    <p>
+    {{ formfields }}
+    </p>
+
+    {{ next_button }}
+
+{{ endblock }}

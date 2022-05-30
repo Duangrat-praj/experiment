@@ -1,0 +1,14 @@
+{{ block title }}
+    Result
+{{ endblock }}
+{{ block content }}
+
+        <p>
+            Your participation fee is €5.
+            You earn {{player.outcome}}
+            Hence, your total payment is {{player.payoff}}.
+        </p>
+
+    {{ next_button }}
+
+{{ endblock }}

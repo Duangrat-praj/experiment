@@ -1,0 +1,29 @@
+{{ block title }}
+    Task 2
+{{ endblock }}
+{{ block content }}
+
+    {{if player.info_task2 == 1}}
+    <p>
+        You saw <b>12</b> pictures of <img src="{{ static 'pattern_lowest_score.png' }}" width="50px"/>
+    </p>
+    {{ formfields }}
+    <p>
+        <br>
+        Your payment will be revealed after the questionnaire.<br>
+        Please proceed to the questionnaire.
+    </p>
+    {{ next_button }}
+
+    {{else}}
+    <p>
+        Your payment will be revealed after the questionnaire.<br>
+        Please proceed to the questionnaire.
+    </p>
+
+    {{ formfields }}
+    {{ next_button }}
+    {{endif}}
+
+
+{{ endblock }}

@@ -1,0 +1,28 @@
+{{ block title }}
+    Tutorial
+{{ endblock }}
+{{ block content }}
+
+    {{if player.info1 == 1}}
+    <p>
+        You saw <b>12</b> pictures of <img src="{{ static 'pattern_lowest_score.png' }}" width="50px"/>
+    </p>
+    {{ formfields }}
+    <p>
+        <br>
+        The true answer will not be revealed.<br>
+        To go to Task 1, click
+    </p>
+    {{ next_button }}
+
+    {{else}}
+    <p>
+        The true answer will not be revealed.<br>
+        To go to Task 1, click
+    </p>
+    {{ formfields }}
+    {{ next_button }}
+    {{endif}}
+
+
+{{ endblock }}

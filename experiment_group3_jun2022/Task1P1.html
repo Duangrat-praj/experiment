@@ -1,0 +1,49 @@
+{{ block title }}
+    Task 1
+{{ endblock }}
+{{ block content }}
+
+<!--    <p>-->
+<!--        This task is the same as during the practice.-->
+<!--    </p>-->
+<!--    <p>-->
+    <ul>
+<!--        <li>You will be given an additional €6 endowment</b>.</li>-->
+<!--    </p>-->
+    <p>
+        <li>You will see <b>25 images</b> that contain different patterns.<br>
+        <u>Example</u>:<br>
+            <video src="{{ static 'lucky.mov' }}" width="320" height="240" autoplay>
+            </video></li>
+    </p>
+    <p>
+        <li>Each pattern is associated with different scores as shown below.<br>
+        <img src="{{ static 'pattern_score.png' }}" width="500px"/> </li>
+    </p>
+    <p>
+        <li>Your job is to mentally calculate and report the estimated total scores from the series of images you are shown.
+        You will have to both of the following questions.<br></li>
+    </p>
+        <img src="{{ static 'score_report_table.png' }}" width="250px"/><br>
+
+    <p>
+        <li>After that you will be asked whether you want to see how many pictures of
+        <img src="{{ static 'pattern_lowest_score.png' }}" width="40px"/>
+        you just saw.</li>
+    </p>
+    <p>
+        <li>If you do not want to see, you can click NO button and the game ends. Your final answer will be the same as your first answer.</li>
+    </p>
+    <p>
+        <li>If you want to see, you can click YES button and ANSWER the total score again. Then, the game ends. The new answer will be your final answer.</li>
+    </p>
+        <p>
+        <li>You will earn <b>€2 accuracy reward</b> if your final answer is correct.</li>
+    </p>
+    </ul>
+    <p>
+        If you are ready, click next.
+    </p>
+    {{ next_button }}
+
+{{ endblock }}

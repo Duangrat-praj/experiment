@@ -1,0 +1,34 @@
+{{ block title }}
+    Task 2
+{{ endblock }}
+{{ block content }}
+
+<!--    <p>-->
+<!--        This task is the same as previous task.-->
+<!--    </p>-->
+    <ul>
+    <p>
+        <li>In this task, you will be given a €6 endowment. However, you will be either <b>LUCKY</b> or <b>UNLUCKY</b>.</li>
+    </p>
+    <p>
+        <li>If you are <b>LUCKY</b>, you will <b>gain</b> more money in addition to your endowment.<br>
+        But if you are <b>UNLUCKY</b>, you will <b>lose</b> some of the endowment.</li>
+    </p>
+    <p>
+        <li>You <b>cannot influence</b> whether you will gain or lose money.</li>
+    </p>
+    <p>
+        <li>However, the total scores you will see will indicate how much you will gain or lose.<br>
+        1 point equals €1.</li>
+    </p>
+        <li>The rest is the same as previous task. Each pattern is associated with different scores as shown below.<br>
+        <img src="{{ static 'pattern_score.png' }}" width="500px"/>
+        </li>
+    </p>
+    </ul>
+    <p>
+        If you are ready, click next.
+    </p>
+    {{ next_button }}
+
+{{ endblock }}
